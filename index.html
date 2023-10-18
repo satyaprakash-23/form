@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body{
+            background-color: #B6FFFA;
+            text-align: center;
+            font-family: Verdana;
+        }
+        form{
+            background-color: #fff;
+            margin: 50px auto;
+            max-width: 500px;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        form > div{
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        form label{
+           display: block;
+           margin-bottom: 10px;
+        }
+        form .box,
+        form select,
+        form textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        button{
+            background-color: #80B3FF;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FORM</h1>
+    <form action="#">
+        <div>
+            <label for="name">Name</label>
+            <input class="box" type="text" id="name" name="name" value="Enter your name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input class="box" type="text" id="email" name="email" value="Enter your email">
+        </div>
+        <div>
+            <label for="age">age</label>
+            <input class="box" type="text" id="age" name="age" value="Enter your age">
+        </div>
+        <div>
+            <label for="best">Which option best describes you?</label>
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professor">Professor</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <label for="recommend">Would you recommend GeeksforGeeks to a friend?</label>
+            <label>
+                <input class="circle" type="radio" id="yes" name="recommend" value="Yes">Yes</input>
+            </label>
+            <label for="no">
+                <input class="circle" type="radio" id="no" name="recommend" value="No">No</input>
+            </label>
+            <label for="maybe">
+                <input class="circle" type="radio" id="maybe" name="recommend" value="No">Maybe</input>
+            </label>
+        </div>
+        <div>
+            <label for="c">
+                <input type="checkbox" id="c" name="c">C</input>
+            </label>
+            <label for="c++">
+                <input type="checkbox" id="c++" name="c++">C++</input>
+            </label>
+            <label for="c#">
+                <input type="checkbox" id="c#" name="c#">C#</input>
+            </label>
+            <label for="Java">
+                <input type="checkbox" id="java" name="java">Java</input>
+            </label>
+            <label for="python">
+                <input type="checkbox" id="python" name="python">Python</input>
+            </label>
+            <label for="javascript">
+                <input type="checkbox" id="javascript" name="javascript">JavaScript</input>
+            </label>
+            <label for="React">
+                <input type="checkbox" id="React" name="React">React</input>
+            </label>
+            <label for="Angular">
+                <input type="checkbox" id="Angular" name="Angular">Angular</input>
+            </label>
+            <label for="Django">
+                <input type="checkbox" id="Django" name="Django">Django</input>
+            </label>
+            <label for="Spring">
+                <input type="checkbox" id="Spring" name="Spring">Spring</input>
+            </label>
+        </div>
+        <div>
+            <label for="comment">Any comments or suggestions</label>
+            <textarea name="comment" id="comment" placeholder="enter your views here" ></textarea>
+        </div>
+        <button type="submit" value="submit" > Submit</button>
+    </form>
+</body>
+</html>
